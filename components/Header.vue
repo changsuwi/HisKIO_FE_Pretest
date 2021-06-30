@@ -2,8 +2,8 @@
   <header>
     <div class="flex flex-row justify-center">
       <button class="mr-2">我想開課</button>
-      <button class="mr-2">任務板</button>
-      <button class="mr-2">我的課程</button>
+      <button class="mr-2" v-if="isLogin">任務板</button>
+      <button class="mr-2" v-if="!isLogin">我的課程</button>
       <button class="w-4 mr-2">
         <svg
           data-v-6da5e576=""
@@ -24,6 +24,8 @@
         </svg>
       </button>
       <button
+        v-if="!isLogin"
+        @click="handleRoute('/login')"
         class="
           mr-2
           w-16
@@ -39,6 +41,7 @@
         登入
       </button>
       <button
+        v-if="!isLogin"
         class="mr-2 w-16 h-8 text-sm text-white mx-8px rounded-4px bg-green-3"
       >
         註冊
@@ -46,6 +49,22 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  props: {
+    isLogin: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+  },
+  methods: {
+    handleRoute(to) {
+      this.$router.push(to);
+    },
+  },
+};
+</script>
 <style lang="scss" scoped>
 .text-green-3 {
   --tw-text-opacity: 1;
