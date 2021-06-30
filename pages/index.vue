@@ -1,7 +1,10 @@
 <template>
-  <Header :isLogin="false" />
+  <div>
+    <Header :is-login="false" />
+    <Fundraising-courses />
+  </div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>

@@ -4,38 +4,36 @@
       <ul>
         <li>
           <input
+            v-model="email"
             type="email"
             placeholder="請輸入 HiSKIO ID"
             class="input-text"
-            v-model="email"
-          />
+          >
         </li>
         <li>
           <input
+            v-model="password"
             type="password"
             placeholder="請輸入登入密碼"
             class="input-text"
-            v-model="password"
-          />
+          >
         </li>
       </ul>
     </div>
     <div class="flex flex-row items-center">
-      <input type="checkbox" />
+      <input type="checkbox">
       <p class="text-sm text-gray-500">
         登入註冊即代表您同意<a
           href="https://hiskio.com/user-policy"
           target="_blank"
           rel="noopener noreferrer"
           class="underline cursor-pointer"
-          >使用者</a
-        >及<a
+        >使用者</a>及<a
           href="https://hiskio.com/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
           class="underline cursor-pointer"
-          >隱私權政策</a
-        >
+        >隱私權政策</a>
       </p>
     </div>
     <div>
@@ -55,31 +53,31 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
-      email: "",
-      password: "",
-      accessToken: "",
-    };
+      email: '',
+      password: '',
+      accessToken: ''
+    }
   },
   methods: {
-    async login() {
+    async login () {
       try {
-        let result = await this.$axios.$post(
-          "https://api.hiskio.com/v2/auth/login",
+        const result = await this.$axios.$post(
+          'https://api.hiskio.com/v2/auth/login',
           {
             account: this.email,
-            password: this.password,
+            password: this.password
           }
-        );
-        this.accessToken = result.accessToken;
-        this.$router.push("/");
+        )
+        this.accessToken = result.accessToken
+        this.$router.push('/')
       } catch (err) {
-        alert(err);
+        alert(err)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .input-text {
