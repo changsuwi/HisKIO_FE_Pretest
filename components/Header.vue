@@ -26,6 +26,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
           class="svg-inline--fa fa-shopping-cart fa-w-18"
+          @click="showSideBar"
         >
           <path
             data-v-6da5e576=""
@@ -73,6 +74,9 @@ export default {
   methods: {
     handleRoute (to) {
       this.$router.push(to)
+    },
+    showSideBar () {
+      this.$emit('handle-side-bar')
     }
   }
 }

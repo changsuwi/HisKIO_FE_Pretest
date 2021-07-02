@@ -1,0 +1,53 @@
+  .w-150px {
+    width: 150px;
+  }
+  .w-177px {
+    width: 177px
+  }
+  .w-375px {
+    width: 375px;
+  }
+  .h-58px {
+    height: 58px
+  }
+  .h-84px {
+    height: 84px
+  }
+  .rounded-6px {
+    border-radius: 6px;
+  }
+  .line-clamp-1 {
+    -webkit-line-clamp: 1;
+  }
+  
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-1,
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+
+  .default-btn,
+  .default-solid-btn {
+    display: flex;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+  }
+  
+  .default-solid-btn {
+    border-radius: 4px;
+    background-color: rgba(23, 143, 172, var(--tw-bg-opacity));
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+  }
+  .text-18px {
+      font-size: 18px;
+  }

@@ -53,6 +53,12 @@
 </template>
 <script>
 export default {
+  props: {
+    isLogin: {
+      type: Boolean,
+      required: true
+    }
+  },
   data () {
     return {
       email: '',
@@ -71,6 +77,7 @@ export default {
           }
         )
         this.accessToken = result.accessToken
+        this.$emit('login')
         this.$router.push('/')
       } catch (err) {
         alert(err)
@@ -92,23 +99,6 @@ export default {
 }
 .mt-28px {
   margin-top: 28px;
-}
-
-.default-btn,
-.default-solid-btn {
-  display: flex;
-  height: 40px;
-  width: 200px;
-  align-items: center;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  --tw-text-opacity: 1;
-}
-
-.default-solid-btn {
-  border-radius: 4px;
-  background-color: rgba(23, 143, 172, var(--tw-bg-opacity));
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .text-gray-600 {
