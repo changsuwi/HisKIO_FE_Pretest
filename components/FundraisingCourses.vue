@@ -119,9 +119,9 @@
               </p>
             </div>
           </div>
-          <div class="relative md:flex md:justify-between md:h-28px">
+          <div class="relative md:flex md:justify-between md:h-28px w-full">
             <div
-              class="flex items-center justify-between text-gray-700 text-14px"
+              class="flex items-center justify-between text-gray-700 text-14px w-full"
             >
               <p class="w-1/2 hidden md:inline">
                 剩 {{ countDay(course.prices[0].schedule_at) }} 天
@@ -130,32 +130,32 @@
                 已募資 103%
               </p>
             </div>
-            <div
-              class="
+          </div>
+          <div
+            class="
                 flex
                 items-center
                 justify-center
                 flex-1
                 h-28px
               "
-            >
-              <div class="flex items-center justify-center w-full h-28px">
-                <div class="w-full">
-                  <div class="flex items-center justify-between">
-                    <div
-                      class="
+          >
+            <div class="flex items-center justify-center w-full h-28px">
+              <div class="w-full">
+                <div class="flex items-center justify-between">
+                  <div
+                    class="
                         w-full
                         overflow-hidden
                         rounded-md
                         h-8px
                         bg-hi-courses-box
                       "
-                    >
-                      <span
-                        class="block h-full rounded-md red-rate"
-                        style="width: 103%"
-                      />
-                    </div>
+                  >
+                    <span
+                      class="block h-full rounded-md red-rate"
+                      style="width: 103%"
+                    />
                   </div>
                 </div>
               </div>
@@ -205,35 +205,7 @@ export default {
 .card-image {
   background-size: cover;
 }
-.z-5 {
-  z-index: 5;
-}
-.w-60px {
-  width: 60px;
-}
-.h-8px {
-  height: 8px;
-}
-.h-28px {
-  height: 28px;
-}
-.h-48px {
-  height: 48px;
-}
-.line-clamp-1 {
-  -webkit-line-clamp: 1;
-}
 
-.line-clamp-2 {
-  -webkit-line-clamp: 2;
-}
-
-.line-clamp-1,
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
 .hover\:text-yellow-3:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 168, 29, var(--tw-text-opacity));

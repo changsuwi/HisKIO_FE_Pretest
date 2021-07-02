@@ -90,19 +90,4 @@ export default {
 .input-text {
   background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
 }
-.py-9px {
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-.w-320px {
-  width: 320px;
-}
-.mt-28px {
-  margin-top: 28px;
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgba(140, 140, 140, var(--tw-text-opacity));
-}
 </style>

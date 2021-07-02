@@ -55,24 +55,19 @@
       </div>
       <div
         v-if="cart.length === 0"
-        data-v-0d4e163b=""
         class="flex flex-col items-center justify-center flex-1 w-full"
       >
         <img
-          data-v-0d4e163b=""
           src="https://d2npjgpjzmbqfv.cloudfront.net/img/img-emptycart.d5dc721.svg"
           width="70%"
         > <p
-          data-v-0d4e163b=""
           class="text-center text-gray-600 text-14px mt-40px"
         >
           購物車裡是空的，<br data-v-0d4e163b="">去逛逛喜歡的課程吧！
         </p> <div
-          data-v-0d4e163b=""
           class="w-200px"
         >
           <a
-            data-v-0d4e163b=""
             href="/groups/all"
             class="w-full default-solid-btn mt-40px mb-97px nuxt-link-active"
           >前往探索課程</a>
@@ -100,7 +95,6 @@
             </p>
             <div class="flex flex-row text-red-1">
               <span
-                data-v-0d4e163b=""
                 class="dollar-sign font-bold mb-2px mr-4px "
               >$</span>
               <p>{{ course.prices[0].price }}</p>
@@ -108,11 +102,9 @@
           </div>
           <div>
             <a
-              data-v-0d4e163b=""
               class="z-3"
               @click="removeCourseByIndex(index)"
             ><svg
-              data-v-0d4e163b=""
               aria-hidden="true"
               focusable="false"
               data-prefix="fas"
@@ -122,7 +114,6 @@
               viewBox="0 0 448 512"
               class="text-gray-400 m-3px mt-5px svg-inline--fa fa-trash fa-w-14"
             ><path
-              data-v-0d4e163b=""
               fill="currentColor"
               d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
               class=""
@@ -131,7 +122,6 @@
         </div>
       </div>
       <button
-        data-v-0d4e163b=""
         class="
           side-bar-cart-button
           absolute
@@ -147,7 +137,6 @@
         "
       >
         <svg
-          data-v-0d4e163b=""
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -158,14 +147,12 @@
           class="mr-16px svg-inline--fa fa-shopping-cart fa-w-18 fa-lg"
         >
           <path
-            data-v-0d4e163b=""
             fill="currentColor"
             d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
             class=""
           />
         </svg>
         <p
-          data-v-0d4e163b=""
           class="text-18px"
         >
           前往購物車
@@ -219,35 +206,6 @@ export default {
     var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
 
-.px-15px{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.py-30px {
-  padding-top: 30px;
-  padding-bottom: 30px;;
-}
-.px-8px {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.py-12px {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.mt-5px {
-  margin-top: 5px;
-}
-.z-11 {
-  z-index: 11;
-}
-.text-red-1 {
-    --tw-text-opacity: 1;
-    color: rgba(227,74,74,var(--tw-text-opacity));
-}
-.border-b-1 {
-    border-bottom-width: 1px;
-}
 .side-bar-cart-button {
   width: 100%;
 }
